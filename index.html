@@ -3,220 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dila Pneus - Revenda Autorizada Continental</title>
+    <title>Dila Pneus - Revenda Premium</title>
     <style>
-        /* Estilos Globais */
+        /* Global Styles */
         body {
-            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
             color: #333;
+            line-height: 1.6;
         }
+
         a {
             text-decoration: none;
             color: inherit;
-            transition: color 0.3s;
         }
-         h1, h2, h3 {
-             margin: 0;
-         }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
         /* Header */
         .header {
-            background-color: #222;
-            color: white;
-             padding: 40px 20px;
+            background: #222;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-         .header img {
-            height: 70px; /* Ajuste o tamanho da logo aqui */
-            margin-bottom: 15px;
-         }
-          .header h1 {
+
+        .header img {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
             font-size: 32px;
-            font-weight: 600;
-            margin-top: 10px;
-             letter-spacing: 1px;
-            text-transform: uppercase;
+            margin-bottom: 5px;
         }
+
         .header h2 {
             font-size: 18px;
+            font-weight: 300;
             color: #fca311;
-           margin: 10px 0;
         }
-         /* Hero Section */
-         .hero {
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fca311, #e5940e);
+            color: white;
             text-align: center;
-           padding: 50px 20px;
-             background: #fff;
-           border-radius: 10px;
-             margin: 30px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s;
-         }
+            padding: 60px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-          .hero:hover {
-             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-         }
-
-         .hero h2 {
-            font-size: 26px;
-            font-weight: 500;
-           margin-bottom: 15px;
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
         }
 
         .hero p {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 25px;
-         }
-        .hero .cta-button {
-           background-color: #fca311;
-           color: white;
-             padding: 15px 30px;
-           font-size: 17px;
-          font-weight: 600;
-           border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        .hero .cta-button:hover {
-           background-color: #e5940e;
-             transform: scale(1.05);
-         }
-           /* Services */
-        .services {
-            padding: 50px 20px;
-            text-align: center;
-        }
-          .services h2 {
-           font-size: 28px;
-             font-weight: 500;
-           margin-bottom: 30px;
-        }
-         .services .grid {
-            display: flex;
-           flex-wrap: wrap;
-           justify-content: center;
-           gap: 25px;
-         }
-         .services .card {
-           background: white;
-           border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            padding: 25px;
-           text-align: center;
-            width: 260px;
-             transition: transform 0.3s, box-shadow 0.3s;
-        }
-         .services .card:hover {
-            transform: translateY(-8px);
-           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-        }
-         .services .card img {
-           width: 100%;
-           border-radius: 8px;
-           margin-bottom: 15px;
-        }
-        .services .card h3 {
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 12px;
-        }
-       .services .card p {
-            font-size: 15px;
-            color: #666;
-           margin-bottom: 20px;
-        }
-        .services .card .cta {
-            margin-top: 15px;
-           background: #27ae60;
-            color: white;
-           padding: 12px 25px;
-             border-radius: 6px;
-           font-size: 14px;
-             text-decoration: none;
-           transition: background 0.3s;
-       }
-          .services .card .cta:hover {
-            background: #1e8449;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
-          /* Footer */
+        .hero .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #333;
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .cta-button:hover {
+            background: #444;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #fca311;
+        }
+
+        .services .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .services .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .services .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .services .card img {
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .services .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .services .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .services .cta {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #fca311;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .services .cta:hover {
+            background: #e5940e;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-choose h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #fca311;
+        }
+
+        .why-choose .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .why-choose .item {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-choose .item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .why-choose .item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Footer */
         .footer {
-            background-color: #222;
+            background: #222;
             color: white;
             text-align: center;
-             padding: 20px;
-           font-size: 14px;
-            letter-spacing: 0.5px;
-            line-height: 1.6;
-         }
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
-   <!-- Header -->
+    <!-- Header -->
     <div class="header">
-       <img src="images/logo_laranja.jpg" alt="Logo Continental">
+        <img src="images/logo_laranja.jpg" alt="Logo Continental">
         <h1>Dila Pneus</h1>
         <h2>Auto Center Autorizado</h2>
-   </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <h2>Excelência no Atendimento e Confiança</h2>
-       <p>Revenda Autorizada Continental</p>
+        <p>Revenda Autorizada Continental</p>
         <a href="https://wa.me/554199999999" class="cta-button">Fale Conosco no WhatsApp</a>
     </section>
 
-    <!-- Serviços -->
-   <section class="services">
+    <!-- Services Section -->
+    <section class="services">
         <h2>Nossos Principais Serviços</h2>
         <div class="grid">
             <div class="card">
-               <img src="images/banner_fastback.jpg" alt="Balanceamento">
+                <img src="images/banner_fastback.jpg" alt="Balanceamento">
                 <h3>Balanceamento</h3>
                 <p>Pneus equilibrados para direção segura.</p>
-               <a href="#" class="cta">Saiba +</a>
+                <a href="#" class="cta">Saiba +</a>
             </div>
             <div class="card">
-               <img src="images/banner_fastback.jpg" alt="Suspensão">
+                <img src="images/banner_fastback.jpg" alt="Suspensão">
                 <h3>Suspensão</h3>
-               <p>Conforto em qualquer terreno.</p>
+                <p>Conforto em qualquer terreno.</p>
                 <a href="#" class="cta">Saiba +</a>
-           </div>
-           <div class="card">
-               <img src="images/banner_fastback.jpg" alt="Troca de Óleo">
+            </div>
+            <div class="card">
+                <img src="images/banner_fastback.jpg" alt="Troca de Óleo">
                 <h3>Troca de Óleo</h3>
                 <p>Manutenção eficiente para o motor.</p>
-               <a href="#" class="cta">Saiba +</a>
-           </div>
+                <a href="#" class="cta">Saiba +</a>
+            </div>
             <div class="card">
                 <img src="images/banner_fastback.jpg" alt="Geometria">
-               <h3>Geometria</h3>
+                <h3>Geometria</h3>
                 <p>Alinhamento preciso para estabilidade.</p>
                 <a href="#" class="cta">Saiba +</a>
-           </div>
+            </div>
             <div class="card">
                 <img src="images/banner_fastback.jpg" alt="Freios">
-               <h3>Freios</h3>
+                <h3>Freios</h3>
                 <p>Frenagem eficiente e segura.</p>
                 <a href="#" class="cta">Saiba +</a>
             </div>
-           <div class="card">
-               <img src="images/banner_fastback.jpg" alt="Injeção Eletrônica">
+            <div class="card">
+                <img src="images/banner_fastback.jpg" alt="Injeção Eletrônica">
                 <h3>Injeção Eletrônica</h3>
                 <p>Desempenho otimizado para seu veículo.</p>
-               <a href="#" class="cta">Saiba +</a>
+                <a href="#" class="cta">Saiba +</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <h2>Por que escolher a Dila Pneus?</h2>
+        <div class="grid">
+            <div class="item">
+                <h3>Atendimento Exclusivo</h3>
+                <p>Consultoria personalizada para você e seu veículo.</p>
+            </div>
+            <div class="item">
+                <h3>Garantia Estendida</h3>
+                <p>Produtos de alta qualidade com garantia adicional.</p>
+            </div>
+            <div class="item">
+                <h3>Parceira Oficial Continental</h3>
+                <p>Confiança e qualidade diretamente de uma marca líder.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-   <footer class="footer">
-        © 2024 Dila Pneus - Todos os direitos reservados.
+    <footer class="footer">
+        &copy; 2024 Dila Pneus - Todos os direitos reservados.
     </footer>
-
 </body>
 </html>
