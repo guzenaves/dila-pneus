@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dila Pneus - Revenda Autorizada Continental</title>
     <style>
-        /* Estilos globais */
+        /* Estilos Globais */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -103,6 +103,11 @@
         .services .card:hover {
             transform: translateY(-5px);
         }
+        .services .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
         .services .card h3 {
             font-size: 20px;
             margin-bottom: 10px;
@@ -111,36 +116,17 @@
             font-size: 14px;
             color: #666;
         }
-
-        /* Por que escolher */
-        .why-choose {
-            padding: 40px 20px;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-        .why-choose h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .why-choose .reasons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .why-choose .reason {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 250px;
-        }
-        .why-choose .reason h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        .why-choose .reason p {
+        .services .card .cta {
+            margin-top: 10px;
+            background: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
             font-size: 14px;
-            color: #666;
+            text-decoration: none;
+        }
+        .services .card .cta:hover {
+            background: #1e8449;
         }
 
         /* Rodapé */
@@ -174,47 +160,40 @@
         <h2>Nossos Principais Serviços</h2>
         <div class="grid">
             <div class="card">
-                <h3>Alinhamento</h3>
-                <p>Garantia de direção segura e confortável.</p>
-            </div>
-            <div class="card">
+                <img src="images/banner_fastback" alt="Balanceamento">
                 <h3>Balanceamento</h3>
-                <p>Rodagem mais estável e tranquila.</p>
+                <p>Pneus equilibrados para direção segura.</p>
+                <a href="#" class="cta">Saiba +</a>
             </div>
             <div class="card">
+                <img src="images/banner_fastback" alt="Suspensão">
+                <h3>Suspensão</h3>
+                <p>Conforto em qualquer terreno.</p>
+                <a href="#" class="cta">Saiba +</a>
+            </div>
+            <div class="card">
+                <img src="images/banner_fastback" alt="Troca de Óleo">
                 <h3>Troca de Óleo</h3>
                 <p>Manutenção eficiente para o motor.</p>
+                <a href="#" class="cta">Saiba +</a>
             </div>
             <div class="card">
-                <h3>Suspensão</h3>
-                <p>Conforto e segurança em todos os trajetos.</p>
+                <img src="images/banner_fastback" alt="Geometria">
+                <h3>Geometria</h3>
+                <p>Alinhamento preciso para estabilidade.</p>
+                <a href="#" class="cta">Saiba +</a>
             </div>
             <div class="card">
+                <img src="images/banner_fastback" alt="Freios">
                 <h3>Freios</h3>
-                <p>Sistema de frenagem revisado e seguro.</p>
+                <p>Frenagem eficiente e segura.</p>
+                <a href="#" class="cta">Saiba +</a>
             </div>
             <div class="card">
-                <h3>Pneus</h3>
-                <p>Venda e instalação com qualidade garantida.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Por que escolher -->
-    <section class="why-choose">
-        <h2>Por que escolher a Dila Pneus?</h2>
-        <div class="reasons">
-            <div class="reason">
-                <h3>Atendimento Exclusivo</h3>
-                <p>Focado em soluções personalizadas para cada cliente.</p>
-            </div>
-            <div class="reason">
-                <h3>Qualidade Garantida</h3>
-                <p>Revenda oficial dos melhores pneus Continental.</p>
-            </div>
-            <div class="reason">
-                <h3>Confiança e Segurança</h3>
-                <p>Mais de 20 anos de experiência no mercado.</p>
+                <img src="images/banner_fastback" alt="Injeção Eletrônica">
+                <h3>Injeção Eletrônica</h3>
+                <p>Desempenho otimizado para seu veículo.</p>
+                <a href="#" class="cta">Saiba +</a>
             </div>
         </div>
     </section>
