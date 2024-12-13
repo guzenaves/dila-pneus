@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dila Pneus - Exclusivo Continental</title>
+    <title>Dila Pneus - Revenda Autorizada Continental</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,49 +13,144 @@
             color: #333;
         }
         .top-banner {
-            background-color: #333;
-            color: #f8f9fa;
-            padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
         }
         .top-banner img {
             height: 50px;
         }
         .hero {
-            background: url('banner_fastback') no-repeat center center;
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             text-align: center;
-            color: #fff;
+            background-color: #f8f9fa;
+            padding: 50px 20px;
         }
         .hero h1 {
             font-size: 36px;
-            margin: 0;
+            margin-bottom: 20px;
         }
-        .cta-button {
+        .hero .cta-button {
             background-color: #fca311;
-            color: #000;
+            color: white;
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
             font-size: 18px;
         }
+        .banner {
+            background: url('banner_fastback') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+        }
+        .services {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .services h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .services .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .services .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+        .differentials {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+        }
+        .differentials h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .differentials .icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .differentials .icon {
+            text-align: center;
+            max-width: 150px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
+    <!-- Topo com Logo -->
     <div class="top-banner">
         <img src="logo_laranja" alt="Logo Continental">
-        <span>Dila Pneus - Exclusivo Continental</span>
+        <span>Dila Pneus - Auto Center Premium</span>
     </div>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>O Melhor para Você e sua Família</h1>
+        <h1>Excelência no Atendimento e Confiança</h1>
+        <p>Revenda Autorizada Continental</p>
         <a href="https://wa.me/554199999999" class="cta-button">Agende Agora</a>
     </section>
+
+    <!-- Banner -->
+    <div class="banner"></div>
+
+    <!-- Serviços -->
+    <section class="services">
+        <h2>Serviços Automotivos</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Alinhamento</h3>
+                <p>Garantia de segurança.</p>
+            </div>
+            <div class="card">
+                <h3>Balanceamento</h3>
+                <p>Rodagem suave.</p>
+            </div>
+            <div class="card">
+                <h3>Troca de Óleo</h3>
+                <p>Manutenção eficiente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="differentials">
+        <h2>Por que escolher a Dila Pneus?</h2>
+        <div class="icons">
+            <div class="icon">
+                <h3>Atendimento Exclusivo</h3>
+                <p>Personalizado para você.</p>
+            </div>
+            <div class="icon">
+                <h3>Qualidade Garantida</h3>
+                <p>Produtos certificados.</p>
+            </div>
+            <div class="icon">
+                <h3>Confiança</h3>
+                <p>Mais de 20 anos de experiência.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        &copy; 2024 Dila Pneus - Todos os direitos reservados.
+    </footer>
 </body>
 </html>
